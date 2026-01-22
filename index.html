@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Study Planner</title>
+    <link rel ="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class = "banner">
+    <h1>Study Planner</h1>
+    </div>
+    <form id = "taskForm">
+
+        <div class="box">
+        <input type="text" id="taskName" placeholder="Task Name" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <input type="date" id="deadline" required>
+    </div>
+        <button type="button" onclick="addTask()">Add Task</button>
+        
+    </form>
+
+    <ul id ="taskList"></ul>
+  </div>
+
+  <p id="message"></p>
+  <script src="app.js"></script>
+</body>
+</html>
